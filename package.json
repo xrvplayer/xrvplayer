@@ -9,7 +9,7 @@
     "dist"
   ],
   "scripts": {
-    "rollup": "rollup -c rollup.config.js"
+    "rollup": "tsc --module commonjs && rollup -c rollup.config.js"
   },
   "author": "王嘉炀 <346461062@qq.com>",
   "license": "MIT",

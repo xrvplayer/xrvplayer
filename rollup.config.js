@@ -27,12 +27,7 @@ export default {
       json(),
       // Compile TypeScript files
       // typescript({ useTsconfigDeclarationDir: true }),
-      // Allow bundling cjs modules (unlike webpack, rollup doesn't understand cjs)
-      commonjs(),
-      // Allow node_modules resolution, so you can use 'external' to control
-      // which external modules to include in the bundle
-      // https://github.com/rollup/rollup-plugin-node-resolve#usage
-      resolve(),
+      
       babel({
         babelHelpers: 'runtime',
         // exclude: 'node_modules/**',
@@ -42,6 +37,12 @@ export default {
         // ],  
         extensions:["tsx","ts","js","jsx"]//超级关键配置
       }),
+      // Allow bundling cjs modules (unlike webpack, rollup doesn't understand cjs)
+      commonjs(),
+      // Allow node_modules resolution, so you can use 'external' to control
+      // which external modules to include in the bundle
+      // https://github.com/rollup/rollup-plugin-node-resolve#usage
+      resolve(),
       // Resolve source maps to the original source
       sourceMaps(),
     ],

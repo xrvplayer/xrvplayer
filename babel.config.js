@@ -14,8 +14,11 @@ module.exports = function (api) {
       // '@babel/preset-typescript'
       [
         "@babel/preset-typescript",{
-          // "isTSX":true,//关键配置
-          // "allExtensions": true//关键配置
+          // allowDeclareFields: true,
+          // isTSX:true, //关键配置
+          // allExtensions: true, //关键配置
+          // allowNamespaces:true,
+          // onlyRemoveTypeImports:true
         }
       ],
     ],
