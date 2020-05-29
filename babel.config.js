@@ -8,19 +8,19 @@ module.exports = function (api) {
           // targets: {
           //   ie: '10'
           // }
-          // useBuiltIns: 'usage' 
+          // useBuiltIns: 'usage'
         }
       ],
       // '@babel/preset-typescript'
-      ["@babel/preset-typescript",
-      {
+      ['@babel/preset-typescript',
+        {
           // allowDeclareFields: true,
           // isTSX:true, //关键配置
           // allExtensions: true, //关键配置
           // allowNamespaces:true,
           // onlyRemoveTypeImports:true
         }
-      ],
+      ]
     ],
     // ignore: [
     //   /\/core-js/,
