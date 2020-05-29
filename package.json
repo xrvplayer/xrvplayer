@@ -13,12 +13,14 @@
   "scripts": {
     "rollup": "tsc --module commonjs && rollup -c rollup.config.js",
     "commit": "git-cz",
-    "prettier": "prettier --write"
+    "lint": "eslint --ext .js --ext .ts src/",
+    "lint-fix": "eslint --fix --ext .js  --ext .ts src/"
   },
   "lint-staged": {
     "{src,test}/**/*.ts": [
       "prettier --write",
-      "git add"
+      "eslint  --fix --ext .js --ext .ts",
+      "eslint --ext .js --ext .ts"
     ]
   },
   "config": {
