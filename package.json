@@ -12,8 +12,7 @@
   "license": "MIT",
   "scripts": {
     "rollup": "tsc --module commonjs && rollup -c rollup.config.js",
-    "commit": "git-cz",
-    "precommit": "lint-staged"
+    "commit": "git-cz"
   },
   "lint-staged": {
     "{src,test}/**/*.ts": [
@@ -24,6 +23,12 @@
   "config": {
     "commitizen": {
       "path": "node_modules/cz-conventional-changelog"
+    }
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "commit-msg": "commitlint -e HUSKY_GIT_PARAMS"
     }
   },
   "commitlint": {
