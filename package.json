@@ -10,7 +10,8 @@
   ],
   "scripts": {
     "rollup": "tsc --module commonjs && rollup -c rollup.config.js",
-    "commit": "git-cz"
+    "commit": "git-cz",
+    "precommit": "lint-staged"
   },
   "lint-staged": {
     "{src,test}/**/*.ts": [
