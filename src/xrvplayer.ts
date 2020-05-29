@@ -4,7 +4,6 @@
 export default class XrvPlayer {
   public xxx () {
     const v = ''
-
     console.log(v + '1')
   }
 
