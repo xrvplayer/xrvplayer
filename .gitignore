@@ -3,8 +3,8 @@ coverage
 .nyc_output
 .DS_Store
 *.log
-.vscode
-# .idea
+# .vscode
+.idea
 dist
 compiled
 .awcache
