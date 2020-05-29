@@ -4,9 +4,8 @@
 export default class XrvPlayer {
   public xxx() {
     const v = ''
-    const b = ''
 
-    console.log(v + b)
+    console.log(v + '1')
   }
 
   public getArr(arr: number[]) {
