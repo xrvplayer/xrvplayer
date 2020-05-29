@@ -12,8 +12,8 @@ module.exports = function (api) {
         }
       ],
       // '@babel/preset-typescript'
-      [
-"@babel/preset-typescript",{
+      ["@babel/preset-typescript",
+      {
           // allowDeclareFields: true,
           // isTSX:true, //关键配置
           // allExtensions: true, //关键配置
