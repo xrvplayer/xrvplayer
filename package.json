@@ -11,6 +11,7 @@
   "author": "王嘉炀 <346461062@qq.com>",
   "license": "MIT",
   "scripts": {
+    "gulp": "gulp",
     "rollup": "tsc --module commonjs && rollup -c rollup.config.js",
     "commit": "git-cz",
     "lint": "eslint --ext .js --ext .ts src/",
@@ -64,12 +65,18 @@
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-standard": "^4.0.1",
     "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
     "husky": "^4.2.5",
     "lint-staged": "^10.2.7",
     "prettier": "^2.0.5",
+    "pump": "^3.0.0",
     "rimraf": "^3.0.2",
     "rollup": "^2.11.2",
     "rollup-plugin-sourcemaps": "^0.6.2",
     "typescript": "^3.9.3"
+  },
+  "dependencies": {
+    "gulp-sass": "^4.1.0",
+    "node-sass": "^4.14.1"
   }
 }
